@@ -1,10 +1,12 @@
 
 import { Suspense, useState } from 'react';
-import './App.css'
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Banner from './components/Banner/Banner'
 import Navbar from './components/Navbar/Navbar'
 import CustomerTickets from './components/CustomerTickets/CustomerTickets';
 import Footer from './components/Footer/Footer';
+
 
 const fetchTickets = async () => {
 
@@ -20,6 +22,8 @@ function App() {
   const handleTaskInProgress = (ticket) => {
     const newTicket = [...tasks, ticket];
     setTasks(newTicket);
+
+    toast.info(`Ticket #${ticket.id} is now in progress!`)
   };
 
 
@@ -29,12 +33,15 @@ function App() {
     setTasks(newTicket);
     const newResolvedTicket = [...resolvedTasks, ticket];
     setResolvedTasks(newResolvedTicket);
+
+    toast.success(`Ticket #${ticket.id} resolved successfully!`);
+
+
   };
 
-  //  console.log(tasks);
   return (
     <div className="app-bg bg-[#F5F5F5]">
-        <Navbar />
+      <Navbar />
       <div className="main-wrapper max-w-7xl mx-auto px-4">
         <Banner tasks={tasks} resolvedTasks={resolvedTasks} />
 
@@ -76,7 +83,7 @@ function App() {
                           {task.title}
                         </h4>
 
-                        <div className="status-complete bg-green-600 text-white p-2 rounded mt-2" onClick={handleTaskResolved.bind(null, task)}>
+                        <div className="status-complete bg-green-600 text-white p-2 rounded mt-2" onClick={() => handleTaskResolved(task)}>
                           Complete
                         </div>
                       </div>
@@ -104,7 +111,7 @@ function App() {
                         <h2 className="resolved-title card-title">
                           {task.title}
                         </h2>
-                       
+
                       </div>
                     </div>
                   ))
@@ -117,6 +124,7 @@ function App() {
         </div>
       </div>
       <Footer />
+      <ToastContainer position="top-right" autoClose={3000} />
     </div>
   )
 }
