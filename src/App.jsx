@@ -99,7 +99,7 @@ function App() {
                     </div>
                   </div>
                   : resolvedTasks.map((task) => (
-                    <div key={task.id} className="resolved-card card bg-base-100 shadow-xl">
+                    <div key={task.id} className="resolved-card card bg-[#E0E7FF] shadow-xl">
                       <div className="resolved-card-body card-body">
                         <h2 className="resolved-title card-title">
                           {task.title}
