@@ -1,9 +1,11 @@
 import React, { use } from 'react';
 import CustomerTicket from './CustomerTicket/CustomerTicket';
 
-const CustomerTickets = ({ customerTicketsPromise }) => {
+const CustomerTickets = ({ customerTicketsPromise, handleTaskInProgress }) => {
 
  const customerTicketsData = use(customerTicketsPromise);
+
+
 
  return (
   <>
@@ -12,7 +14,7 @@ const CustomerTickets = ({ customerTicketsPromise }) => {
    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
     {
      customerTicketsData.map((ticket) => (
-      <CustomerTicket key={ticket.id} customerTicketsData={ticket} />
+      <CustomerTicket key={ticket.id} customerTicketsData={ticket} handleTaskInProgress={handleTaskInProgress} />
      ))
     }
    </div>

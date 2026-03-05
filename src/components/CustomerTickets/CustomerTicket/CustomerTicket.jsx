@@ -1,7 +1,7 @@
 import React from 'react';
 import calender from '../../../assets/calender.png';
 
-const CustomerTicket = ({ customerTicketsData }) => {
+const CustomerTicket = ({ customerTicketsData, handleTaskInProgress }) => {
  const {
   title,
   description,
@@ -11,10 +11,10 @@ const CustomerTicket = ({ customerTicketsData }) => {
   id,
   createdAt,
  } = customerTicketsData;
- console.log(title)
+ 
  return (
   <>
-   <div className="card bg-base-100 shadow-xl">
+   <div className="card bg-base-100 shadow-xl" onClick={() => handleTaskInProgress(customerTicketsData)}>
     <div className="p-5">
      <div className="flex justify-between items-center mt-2 mb-5">
       <h4 className="font-bold">{title}</h4>
