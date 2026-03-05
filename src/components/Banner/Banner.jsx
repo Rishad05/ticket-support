@@ -4,7 +4,7 @@ import ResolvedBanner from './ResolvedBanner/ResolvedBanner';
 
 const Banner = () => {
  return (
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 m-4">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-15">
    <InprogressBanner
     title="In-Progress"
     count={5}

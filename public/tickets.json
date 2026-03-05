@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "title": "Login issue",
+    "description": "User unable to login with correct credentials.",
+    "customer": "John Smith",
+    "priority": { "level": "HIGH PRIORITY", "color": "red" },
+    "status": { "type": "Open", "color": "#02A53B", "background": "#B9F8CF" },
+    "createdAt": "2026-03-01"
+  },
+  {
+    "id": 2,
+    "title": "Payment not processed",
+    "description": "Customer reported payment failed but money deducted.",
+    "customer": "Sarah Ahmed",
+    "priority": { "level": "HIGH PRIORITY", "color": "red" },
+    "status": { "type": "In Progress", "color": "#FFA500", "background": "#FFE6B3" },
+    "createdAt": "2026-03-01"
+  },
+  {
+    "id": 3,
+    "title": "Password reset email not received",
+    "description": "Customer requested password reset but email not delivered.",
+    "customer": "Michael Brown",
+    "priority": { "level": "MEDIUM PRIORITY", "color": "#EAB308" },
+    "status": { "type": "Open", "color": "#02A53B", "background": "#B9F8CF" },
+    "createdAt": "2026-03-02"
+  },
+  {
+    "id": 4,
+    "title": "Page loading slowly",
+    "description": "Dashboard page takes more than 10 seconds to load.",
+    "customer": "Fatima Khan",
+    "priority": { "level": "LOW PRIORITY", "color": "#3B82F6" },
+    "status": { "type": "Open", "color": "#02A53B", "background": "#B9F8CF" },
+    "createdAt": "2026-03-02"
+  },
+  {
+    "id": 5,
+    "title": "Order confirmation missing",
+    "description": "Customer placed order but did not receive confirmation.",
+    "customer": "David Lee",
+    "priority": { "level": "MEDIUM PRIORITY", "color": "#EAB308" },
+    "status": { "type": "Resolved", "color": "#2563EB", "background": "#DBEAFE" },
+    "createdAt": "2026-03-02"
+  },
+  {
+    "id": 6,
+    "title": "Account suspended unexpectedly",
+    "description": "Customer account got suspended without notification.",
+    "customer": "Emily Johnson",
+    "priority": { "level": "HIGH PRIORITY", "color": "red" },
+    "status": { "type": "In Progress", "color": "#FFA500", "background": "#FFE6B3" },
+    "createdAt": "2026-03-03"
+  },
+  {
+    "id": 7,
+    "title": "Mobile app crash",
+    "description": "App crashes when user opens notifications tab.",
+    "customer": "Rahim Uddin",
+    "priority": { "level": "HIGH PRIORITY", "color": "red" },
+    "status": { "type": "Open", "color": "#02A53B", "background": "#B9F8CF" },
+    "createdAt": "2026-03-03"
+  },
+  {
+    "id": 8,
+    "title": "Profile update error",
+    "description": "Customer cannot update profile information.",
+    "customer": "Ayesha Rahman",
+    "priority": { "level": "MEDIUM PRIORITY", "color": "#EAB308" },
+    "status": { "type": "In Progress", "color": "#FFA500", "background": "#FFE6B3" },
+    "createdAt": "2026-03-03"
+  },
+  {
+    "id": 9,
+    "title": "File upload failed",
+    "description": "System shows error while uploading documents.",
+    "customer": "Daniel Wilson",
+    "priority": { "level": "MEDIUM PRIORITY", "color": "#EAB308" },
+    "status": { "type": "Open", "color": "#02A53B", "background": "#B9F8CF" },
+    "createdAt": "2026-03-03"
+  },
+  {
+    "id": 10,
+    "title": "Notification delay",
+    "description": "Push notifications are delayed by several minutes.",
+    "customer": "Nusrat Jahan",
+    "priority": { "level": "LOW PRIORITY", "color": "#3B82F6" },
+    "status": { "type": "Open", "color": "#02A53B", "background": "#B9F8CF" },
+    "createdAt": "2026-03-04"
+  },
+  {
+    "id": 11,
+    "title": "Incorrect invoice generated",
+    "description": "Invoice shows wrong product price.",
+    "customer": "Omar Faruk",
+    "priority": { "level": "HIGH PRIORITY", "color": "red" },
+    "status": { "type": "In Progress", "color": "#FFA500", "background": "#FFE6B3" },
+    "createdAt": "2026-03-04"
+  },
+  {
+    "id": 12,
+    "title": "Search feature not working",
+    "description": "Search returns empty results even when products exist.",
+    "customer": "Lisa Taylor",
+    "priority": { "level": "MEDIUM PRIORITY", "color": "#EAB308" },
+    "status": { "type": "Open", "color": "#02A53B", "background": "#B9F8CF" },
+    "createdAt": "2026-03-04"
+  }
+]
