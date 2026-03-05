@@ -4,6 +4,7 @@ import './App.css'
 import Banner from './components/Banner/Banner'
 import Navbar from './components/Navbar/Navbar'
 import CustomerTickets from './components/CustomerTickets/CustomerTickets';
+import Footer from './components/Footer/Footer';
 
 const fetchTickets = async () => {
 
@@ -70,6 +71,7 @@ function App() {
 
         </div>
       </div>
+      <Footer />
     </div>
   )
 }
