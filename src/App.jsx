@@ -33,9 +33,9 @@ function App() {
 
   //  console.log(tasks);
   return (
-    <div className="app-bg bg-[#F5F5F5] py-10">
-      <div className="main-wrapper max-w-7xl mx-auto px-4">
+    <div className="app-bg bg-[#F5F5F5]">
         <Navbar />
+      <div className="main-wrapper max-w-7xl mx-auto px-4">
         <Banner tasks={tasks} resolvedTasks={resolvedTasks} />
 
         <div className="dashboard-grid grid grid-cols-1 lg:grid-cols-12 gap-4 mt-5">
